@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Veeru - Buyers</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom styles -->
+  <style>
+    .fade-in {
+      opacity: 0;
+      animation: fadeIn 1s forwards;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+
+    .fade-in-image {
+      animation: fadeInImage 1s forwards;
+    }
+
+    @keyframes fadeInImage {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .steps-section {
+      background-color: #f8f9fa;
+      padding: 40px 0;
+    }
+
+    .step {
+      cursor: pointer;
+      margin: 15px 0;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 15px;
+      position: relative;
+      overflow: hidden;
+      transition: background-color 0.3s ease;
+    }
+
+    .step:hover {
+      background-color: #e9ecef;
+    }
+
+    .step-content {
+      max-height: 0;
+      opacity: 0;
+      overflow: hidden;
+      transition: max-height 0.6s ease, opacity 0.6s ease;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+
+    .step-content.show {
+      max-height: 300px; /* Adjust based on content */
+      opacity: 1;
+    }
+
+    .step-icon {
+      position: absolute;
+      right: 15px;
+      top: 50%;
+      transform: translateY(-50%);
+      transition: transform 0.3s ease;
+    }
+
+    .step-icon.open {
+      transform: rotate(45deg) translateY(-50%);
+    }
+
+    .info-section {
+      padding: 40px 0;
+    }
+
+    .info-section .container {
+      max-width: 800px;
+    }
+
+    .info-section img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+    }
+
+    .footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand mx-auto" href="index.html">Veeru</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="sellers.html">Sellers</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="buyers.html">Buyers</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+      <span class="navbar-text">
+        +1 (908) 548-7551
+      </span>
+    </div>
+  </nav>
+
+  <!-- Buyers Information Section -->
+  <section class="info-section">
+    <div class="container">
+      <h2 class="text-center mb-4 fade-in">Buying a Home with Veeru</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <img src="keys.jpg" alt="Buying a Home" class="fade-in-image">
+        </div>
+        <div class="col-md-6">
+          <p class="fade-in">The Buying a home is a significant milestone, and Veeru is here to make the process easier and more affordable for you. Here's what we offer:</p>
+          <ul class="fade-in">
+            <li><strong>Comprehensive Property Listings:</strong> Access detailed listings with high-quality images and descriptions to find your ideal home.</li>
+            <li><strong>Expert Guidance:</strong> Our team of experts provides personalized advice to help you navigate the buying process with ease.</li>
+            <li><strong>Streamlined Transactions:</strong> We handle all the paperwork and negotiations, ensuring a smooth and hassle-free experience.</li>
+            <li><strong>Cost Savings:</strong> Our competitive rates and transparent fees help you save money while finding your dream home.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Steps to Buying a Home Section -->
+  <section class="steps-section">
+    <div class="container">
+      <h2 class="text-center mb-4">Steps to Buying a Home</h2>
+      <div class="step">
+        <div class="step-header">
+          <h4>1. Get Pre-Approved for a Mortgage</h4>
+          <span class="step-icon">+</span>
+        </div>
+        <div class="step-content">
+          <p>Before you start house hunting, get pre-approved for a mortgage to know your budget and show sellers you’re a serious buyer.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-header">
+          <h4>2. Start Your Home Search</h4>
+          <span class="step-icon">+</span>
+        </div>
+        <div class="step-content">
+          <p>Begin your search by exploring different neighborhoods, comparing properties, and visiting open houses to find your perfect home.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-header">
+          <h4>3. Make an Offer</h4>
+          <span class="step-icon">+</span>
+        </div>
+        <div class="step-content">
+          <p>Once you’ve found a home you love, make an offer. Your real estate agent will help you with the negotiation process.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-header">
+          <h4>4. Conduct Home Inspections</h4>
+          <span class="step-icon">+</span>
+        </div>
+        <div class="step-content">
+          <p>Arrange for a home inspection to identify any potential issues with the property before finalizing the purchase.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-header">
+          <h4>5. Close the Deal</h4>
+          <span class="step-icon">+</span>
+        </div>
+        <div class="step-content">
+          <p>Finalize your mortgage, sign the paperwork, and close the deal to become the new owner of your home.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Additional Information Section -->
+  <section id="contact" class="info-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <img src="phoneguy.jpg" alt="Contact Us">
+        </div>
+        <div class="col-md-6">
+          <h3>Contact Us</h3>
+          <p>If you have any questions or need assistance, feel free to reach out to us. We're here to help!</p>
+          <ul class="list-unstyled">
+            <li><strong>Phone:</strong> +1 (908) 548-7551</li>
+            <li><strong>Email:</strong> Realtor@veeru.com</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2024 Veeru. All rights reserved.</p>
+  </footer>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!-- Custom JS -->
+  <script>
+    $(document).ready(function() {
+      // Fade-in effect on scroll
+      function fadeInOnScroll() {
+        var elements = $('.fade-in');
+        var windowHeight = $(window).height();
+        var scrollTop = $(window).scrollTop();
+
+        elements.each(function() {
+          var offsetTop = $(this).offset().top;
+          if (scrollTop + windowHeight > offsetTop + 100) {
+            $(this).addClass('fade-in');
+          }
+        });
+      }
+
+      $(window).on('scroll', fadeInOnScroll);
+      fadeInOnScroll(); // Trigger on page load
+
+      // Dropdown functionality for steps
+      $('.step').click(function() {
+        var target = $(this).find('.step-content');
+        var icon = $(this).find('.step-icon');
+        var isOpen = target.hasClass('show');
+        
+        // Collapse all other steps
+        $('.step-content').removeClass('show');
+        $('.step-icon').removeClass('open');
+
+        // Toggle the clicked step
+        target.toggleClass('show', !isOpen);
+        icon.toggleClass('open', !isOpen);
+      });
+    });
+  </script>
+</body>
+</html>

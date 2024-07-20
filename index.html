@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Veeru - Home</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom styles -->
+  <style>
+    .carousel-item {
+      height: 60vh;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+    .jumbotron-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    .jumbotron-text {
+      z-index: 1;
+    }
+    .fee-highlight {
+      text-align: center;
+      margin: 40px 0;
+    }
+    .fee-highlight img {
+      width: 150px;
+    }
+    .fee-highlight p {
+      margin: 10px 0 0;
+    }
+    .divider {
+      border-bottom: 1px solid #ddd;
+      margin: 40px 0;
+    }
+    .info-section {
+      padding: 40px 0;
+    }
+    .info-section .container {
+      max-width: 800px;
+    }
+    .info-section ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    .info-section li {
+      margin-bottom: 10px;
+    }
+    .contact-section .container {
+      max-width: 600px;
+    }
+    .footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+    }
+    .animate {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+    .animate.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .how-different {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .how-different .item {
+      flex: 1 1 calc(33.333% - 20px);
+      margin: 10px;
+      background-color: #f8f9fa;
+      padding: 20px;
+      border-radius: 5px;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    .how-different .item:hover {
+      transform: translateY(-10px);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand mx-auto" href="#">Veeru</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="sellers.html">Sellers</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="buyers.html">Buyers</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+      <span class="navbar-text">
+        +1 (908) 548-7551
+      </span>
+    </div>
+  </nav>
+
+  <!-- Jumbotron (Carousel) -->
+  <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" style="background-image: url('https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg');">
+        <div class="jumbotron-overlay">
+          <div class="jumbotron-text animate">
+            <h1 class="display-5">Discover your dream home with us.</h1>
+            <p>
+              <a href="#contact" class="btn btn-primary mr-2">Contact Us</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item" style="background-image: url('https://images.pexels.com/photos/7601155/pexels-photo-7601155.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');">
+        <div class="jumbotron-overlay">
+          <div class="jumbotron-text animate">
+            <h1 class="display-5">Find your perfect property today.</h1>
+            <p>
+              <a href="#contact" class="btn btn-primary mr-2">Contact Us</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item" style="background-image: url('https://images.pexels.com/photos/449461/pexels-photo-449461.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');">
+        <div class="jumbotron-overlay">
+          <div class="jumbotron-text animate">
+            <h1 class="display-5">Explore luxury homes with Veeru.</h1>
+            <p>
+              <a href="#contact" class="btn btn-primary mr-2">Contact Us</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Divider -->
+  <div class="divider"></div>
+
+  <!-- Fee Highlight Section -->
+  <section class="fee-highlight animate">
+    <img src="6x.png" alt="6% Crossed Out">
+    <h3>Save $30,000*</h3>
+    <p><small>*For a million dollar home</small></p>
+  </section>
+
+  <!-- Divider -->
+  <div class="divider"></div>
+
+  <!-- How We Are Different Section -->
+  <section id="how-we-are-different" class="info-section animate">
+    <div class="container">
+      <h2 class="text-center mb-4">How We Are Different</h2>
+      <div class="how-different">
+        <div class="item">
+          <h4>Professional and Knowledgeable</h4>
+          <p>We are experts in the real estate market, providing personalized service to help you find the perfect home.</p>
+        </div>
+        <div class="item">
+          <h4>Personalized Service</h4>
+          <p>We tailor our services to meet your specific needs, ensuring a smooth and stress-free home buying or selling experience.</p>
+        </div>
+        <div class="item">
+          <h4>Comprehensive Market Analysis</h4>
+          <p>We provide in-depth market analysis to help you make informed decisions about buying or selling your home.</p>
+        </div>
+        <div class="item">
+          <h4>Extensive Network and Resources</h4>
+          <p>Our extensive network and resources give you access to the best properties and the latest market trends.</p>
+        </div>
+        <div class="item">
+          <h4>Commitment to Customer Satisfaction</h4>
+          <p>We are dedicated to ensuring our clients are completely satisfied with our services and their real estate transactions.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Divider -->
+  <div class="divider"></div>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section animate">
+    <div class="container">
+      <h2 class="text-center mb-4">Contact Us</h2>
+      <div class="row">
+        <div class="col-md-6 mx-auto contact-info">
+          <p>Contact us via phone or email:</p>
+          <ul>
+            <li><strong>Phone:</strong> +1 (908) 548-7551</li>
+            <li><strong>Email:</strong> Realtor@veeru.com</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2024 Veeru. All rights reserved.</p>
+  </footer>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!-- Custom JS for animations -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      function handleScroll() {
+        const elements = document.querySelectorAll('.animate');
+        const windowHeight = window.innerHeight;
+
+        elements.forEach(element => {
+          const position = element.getBoundingClientRect().top;
+          if (position < windowHeight - 50) {
+            element.classList.add('visible');
+          }
+        });
+      }
+
+      window.addEventListener('scroll', handleScroll);
+      handleScroll();
+    });
+  </script>
+</body>
+</html>
